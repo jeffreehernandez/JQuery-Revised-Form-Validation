@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <h1>Student Enrollment</h1>
+  <h3>JQuery Powered Validation Form</h3>
+
+  <div class="card">
+
+    <form id="enrollForm">
+
+      <div class="section-title">Personal Details</div>
+
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" id="fullname">
+        <div class="error" id="fullname-error"></div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Date of Birth *</label>
+          <input type="date" id="dob">
+          <div class="error" id="dob-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Age *</label>
+          <input type="number" id="age">
+          <div class="error" id="age-error"></div>
+        </div>
+      </div>
+
+      <label>Gender *</label>
+      <div class="gender-buttons">
+        <div class="gender-btn" data-value="Male">Male</div>
+        <div class="gender-btn" data-value="Female">Female</div>
+      </div>
+      <div class="error" id="gender-error"></div>
+
+      <br><br>
+      <div class="section-title">Contact Information</div>
+
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" id="email">
+        <div class="error" id="email-error"></div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="text" id="phone">
+          <div class="error" id="phone-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Street Address *</label>
+          <input type="text" id="street">
+          <div class="error" id="street-error"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>City *</label>
+          <input type="text" id="city">
+          <div class="error" id="city-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Province *</label>
+          <input type="text" id="province">
+          <div class="error" id="province-error"></div>
+        </div>
+
+        <div class="form-group">
+          <label>Zip Code *</label>
+          <input type="text" id="zip">
+          <div class="error" id="zip-error"></div>
+        </div>
+      </div>
+
+      <button type="submit">Submit Enrollment</button>
+
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
