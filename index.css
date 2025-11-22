@@ -1,0 +1,147 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #050505;
+  margin: 0;
+  padding: 40px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #fff;
+}
+
+h3 {
+  text-align: center;
+  color: #6b7280;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 900px;
+  margin: auto;
+  background: rgb(139, 139, 139);
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 10px 38px rgba(20, 30, 40, 0.12);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title::before {
+  content: "📘";
+  font-size: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cfd5e1;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.25);
+}
+
+.valid {
+  border-color: #28a745 !important;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.25);
+}
+
+.invalid {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.25);
+}
+
+.error {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #dc3545;
+  min-height: 18px;
+}
+
+.gender-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.gender-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 30px;
+  border: 1px solid #cfd5e1;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  background: white;
+  transition: 0.2s ease;
+}
+
+.gender-btn:hover {
+  background: #f5f7ff;
+}
+
+.gender-btn.active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #1e4ed8;
+}
